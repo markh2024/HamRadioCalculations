@@ -3,6 +3,24 @@
 
 Showing some of the functionality 
 
+Special thanks to essex ham radio 
+
+https://www.essexham.co.uk/
+
+Postings on facebook and instagram at these addresses 
+
+https://www.facebook.com/mark.harrington.14289/videos/2161388324257623
+
+&&
+
+https://www.instagram.com/p/DBFBcSvpi_7/
+## built using following specs 
+
+Product Version: Apache NetBeans IDE 20
+Java: 11.0.21; Java HotSpot(TM) 64-Bit Server VM 11.0.21+9-LTS-193
+Runtime: Java(TM) SE Runtime Environment 11.0.21+9-LTS-193
+System: Linux version 6.1.0-25-amd64 running on amd64; UTF-8; en_GB (nb)
+
 ## Graphs 
 
 ![graphs](https://github.com/user-attachments/assets/07d296ab-aa22-4460-9de5-6ba4e8e86971)
