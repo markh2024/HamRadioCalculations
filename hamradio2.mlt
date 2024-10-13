@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.12.0" title="Shotcut version 22.12.22" producer="main_bin">
+  <profile description="automatic" width="1722" height="926" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="861" display_aspect_den="463" frame_rate_num="11968" frame_rate_den="377" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:03:08.505">
+    <property name="length">00:03:08.537</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:03:08.505"/>
+  </playlist>
+  <chain id="chain0" out="00:03:08.505">
+    <property name="length">00:03:08.537</property>
+    <property name="eof">pause</property>
+    <property name="resource">HamRadioJava-2024-10-13_21.29.14</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="format">3</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="creation_time">2024-10-13T20:32:34</property>
+    <property name="shotcut:hash">4e1ea59ab7e12ff7022cd967b022180a</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">HamRadioJava-2024-10-13_21.29.14</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" out="00:03:08.505">
+      <property name="argument">Created by MD Harrington  London Kent DA6 8NP 
+For Essex and Other Ham Radio  Clubs #localfiledate# #timecode#</property>
+      <property name="geometry">469 802 1339 92 1</property>
+      <property name="family">Sans</property>
+      <property name="size">463</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#0000ff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="chain0" in="00:00:00.000" out="00:03:08.505"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 22.12.22" in="00:00:00.000" out="00:03:08.505">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+  </tractor>
+</mlt>
